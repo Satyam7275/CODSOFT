@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', Bold Italic;
+    background: linear-gradient(to right, #ff758c, #e3e0e1); /* Gradient Background */
+    color: #09021b;
+    overflow-x: hidden;
+    body {
+        font-family: 'Roboto',Bold Italic ;
+    }
+    h1 {
+        font-family: 'Roboto', Bold Italic;
+        font-weight: 700;
+    }
+    
+}
+
+/* Navigation */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: rgba(32, 156, 198, 0.5);
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background: #0fd2ae;
+    transition: background 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #a9a337;
+}
+
+/* Section Styling */
+.section {
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('image4.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.3; /* Slightly transparent background */
+}
+
+/* Bubble Icons */
+.section .content {
+    position: relative;
+}
+
+.content h1, .content h2, .content p {
+    margin: 50px 0;
+}
+
+/* Container Styling */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Increased gap for larger icons */
+    margin-top: 50px;
+}
+
+/* Bubble Icon Styling */
+.bubble-icon {
+    width: 120px; /* Increased width */
+    height: 120px; /* Increased height */
+    background: linear-gradient(135deg, #3b47a4, #ffd1dc); /* Gradient background */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* Icon Hover Effect */
+.bubble-icon:hover {
+    transform: scale(1.2) rotate(10deg); /* Enlarge and slightly rotate */
+    background: linear-gradient(135deg, #80ea77, #37ee77); /* New gradient on hover */
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow for bigger icons */
+}
+
+/* Optional Background Animation */
+.bubble-icon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(7, 250, 230, 0.3), transparent);
+    animation: bubbleBackground 4s linear infinite;
+}
+
+/* Keyframes for Background Animation */
+@keyframes bubbleBackground {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(200px, 200px); }
+}
+
+/* Image Inside Bubble */
+.bubble-icon img {
+    width: 100px; /* Increased image size to fit the larger bubble */
+    height: 100px;
+    position: relative;
+    z-index: 2; /* Ensures the image stays on top */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .icon-container {
+        flex-direction: column;
+        gap: 20px; /* Adjusted gap for smaller screens */
+    }
+}

@@ -1,0 +1,194 @@
+/* Reset some default browser styling */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(45deg, #0d4292, #c3cfe2);
+}
+
+/* Hero Section with your background image */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(28, 27, 136, 0.8), rgba(0, 0, 0, 0.7)), url('geometric-gradient-futuristic-background_23-2149116406.avif') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Navigation Bar */
+nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f01212;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Hero Content */
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    color: #ffeaa7;
+}
+
+.hero-content button {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    background: linear-gradient(45deg, #ff7675, #d63031);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content button:hover {
+    background: linear-gradient(45deg, #fab1a0, #e17055);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-section, .features-section, .contact-section {
+    background-color: #cfd8b3;
+    margin: 30px 0;
+    border-radius: 15px;
+    padding: 60px 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2, .features-section h2, .contact-section h2 {
+    color: #08031f;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.feature-item {
+    background: linear-gradient(45deg, #74b9ff, #0b6ebabf);
+    color: white;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Adjust as needed */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.feature-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #0d95d0;
+}
+
+/* Footer Styling */
+footer {
+    background: #2d3436;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-section h2, .features-section h2, .contact-section h2 {
+        font-size: 2rem;
+    }
+}

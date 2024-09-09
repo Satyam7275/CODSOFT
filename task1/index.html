@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="javascript:void(0);" onclick="scrollToSection('home')">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('features')">Features</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Your solution for everything!</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </header>
+
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We offer exceptional services and solutions that empower you.</p>
+    </section>
+
+   <section class="features-section">
+    <h2>Features</h2>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <img src="image1.jpg" alt="Feature 1 Image" class="feature-image">
+        
+            <p>Singing</p>
+        </div>
+        <div class="feature-item">
+            <img src="image2.jpg" alt="Feature 2 Image" class="feature-image">
+            <p>Chess</p>
+            
+        </div>
+        <!-- Add more feature items as needed -->
+    </div>
+</section>
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out with any questions!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Satyam Mishra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
